@@ -1,7 +1,9 @@
-// Q4.Describe the usage of the comma operator in JavaScript and provide an example.
+let expenses = [
+    {amount: 100, category:"Utilities"},
+    {amount:200, category:"Groceries"},
+    {amount:50, category:"Entertainment"}
+];
 
-let a = 5,
- b = 7,
- c = 9;
+let groceriesExpenses = expenses.filter((expense)=>expense.category==="Groceries");
 
-console.log(a,b,c);
+console.log("Groceries Expenses:", groceriesExpenses)

@@ -1,13 +1,11 @@
-// Q2.Generate numbers between any 2 given numbers.
-// Ex.
-// const num1=10;
-// const num2=25;
+function randomNumberGenerator (){
+    const randomNumber = Math.floor(Math.random()*100);
+    console.log(randomNumber);
+}
 
-// Output:11,12,13,.....25
+function printWithInterval (){
+    randomNumberGenerator();
+    setInterval(randomNumberGenerator, 2000);
+}
 
-// let num1 = 10;
-// let num2 = 25;
-
-// for(let i = num1++; i <= num2; i++){
-// console.log(i)
-// }
+printWithInterval();
